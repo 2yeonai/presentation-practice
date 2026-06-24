@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -502,198 +503,6 @@
             }
         }
 
-
-        /* -------------------- 모바일 깨짐 보정 + 현재 문장 듣기 속도 -------------------- */
-        .tts-speed-group {
-            display: flex;
-            gap: 5px;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .tts-speed-btn {
-            padding: 7px 10px;
-            border: 1px solid #d7d7d7;
-            background: #fff;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            color: #444;
-        }
-        .tts-speed-btn.active {
-            background: #2c5e3b;
-            color: #fff;
-            border-color: #2c5e3b;
-        }
-        @media (max-width: 768px) {
-            body {
-                padding: 8px;
-                align-items: stretch;
-            }
-            .container,
-            .app.mobile-mode.container {
-                width: 100%;
-                max-width: 100%;
-                padding: 10px;
-                margin: 0;
-                border-radius: 0;
-                box-shadow: none;
-                box-sizing: border-box;
-            }
-            h1 {
-                font-size: 22px;
-                margin: 6px 0 10px;
-            }
-            .mode-bar {
-                flex-wrap: wrap;
-                gap: 6px !important;
-                margin-bottom: 10px !important;
-            }
-            .mode-btn {
-                padding: 8px 9px;
-                font-size: 13px;
-                flex: 1 1 auto;
-            }
-            body.script-mode #practiceTopBar {
-                position: static !important;
-                top: auto !important;
-                z-index: auto !important;
-                display: flex !important;
-                flex-direction: column;
-                align-items: stretch !important;
-                gap: 8px !important;
-                margin-bottom: 10px !important;
-                padding: 10px !important;
-                border-radius: 12px;
-                box-sizing: border-box;
-            }
-            body.script-mode #practiceTopBar > div {
-                width: 100%;
-                min-width: 0;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 6px !important;
-                box-sizing: border-box;
-            }
-            body.script-mode #practiceTopBar > div:nth-child(3) {
-                flex-wrap: nowrap;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                padding-bottom: 2px;
-            }
-            body.script-mode #practiceTopBar > div:nth-child(3) span:first-child,
-            body.script-mode #practiceTopBar > div:nth-child(4) span:first-child {
-                white-space: nowrap;
-                flex: 0 0 auto;
-            }
-            body.script-mode #practiceTopBar .time-display {
-                font-size: 28px !important;
-                line-height: 1 !important;
-                min-width: 78px;
-                margin: 0 2px !important;
-                white-space: nowrap;
-            }
-            body.script-mode #practiceTopBar .btn-timer {
-                padding: 7px 9px !important;
-                font-size: 16px !important;
-                min-width: 42px;
-                margin: 1px !important;
-            }
-            body.script-mode #practiceTopBar > div:nth-child(5) {
-                display: none !important;
-            }
-            body.script-mode #practiceTopBar audio {
-                width: 92px !important;
-                max-width: 92px !important;
-            }
-            body.script-mode #scriptTab {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 8px;
-            }
-            body.script-mode #scriptTab .slide-view {
-                position: static !important;
-                top: auto !important;
-                z-index: auto !important;
-                max-height: none !important;
-                padding: 8px !important;
-                margin: 0 !important;
-                box-sizing: border-box;
-            }
-            body.script-mode #scriptTab .slide-view img {
-                max-height: 175px !important;
-                width: 100% !important;
-                height: auto !important;
-                object-fit: contain !important;
-            }
-            body.script-mode #scriptTab .slide-controls {
-                margin-top: 8px !important;
-                gap: 8px;
-            }
-            body.script-mode #scriptTab .slide-controls .btn-nav {
-                padding: 8px 14px;
-                font-size: 16px;
-            }
-            body.script-mode #prompterControls {
-                margin-top: 8px !important;
-                padding: 8px 6px !important;
-                gap: 6px !important;
-            }
-            body.script-mode #prompterControls .btn-qna {
-                padding: 9px 10px !important;
-                font-size: 14px !important;
-                margin: 2px !important;
-            }
-            .tts-speed-group {
-                width: 100%;
-                gap: 4px;
-            }
-            .tts-speed-btn {
-                padding: 6px 8px;
-                font-size: 12px;
-            }
-            body.script-mode #currentScriptText {
-                margin-top: 0 !important;
-                max-height: none !important;
-                overflow-y: visible !important;
-                padding: 12px !important;
-                font-size: 18px;
-                box-sizing: border-box;
-            }
-            .slide-title {
-                font-size: 15px;
-                margin-bottom: 8px;
-            }
-            .three-line-prompter {
-                min-height: auto !important;
-                gap: 8px !important;
-            }
-            .prompter-line {
-                padding: 12px 13px;
-                line-height: 1.45;
-            }
-            .prompter-prev,
-            .prompter-next {
-                min-height: 2.8em;
-                font-size: 16px;
-            }
-            .prompter-current {
-                min-height: 4.2em;
-                font-size: 22px;
-            }
-            .prompter-status {
-                margin-top: 8px;
-                padding: 7px 10px;
-                font-size: 14px;
-            }
-            .prompter-hint {
-                margin-top: 6px;
-                font-size: 13px;
-                line-height: 1.4;
-            }
-        }
-
 </style>
 </head>
 <body>
@@ -765,12 +574,6 @@
                     <button class="btn-qna" onclick="nextPrompterLine()" style="background-color:#2c5e3b;">다음 문장 ▶</button>
                     <button class="btn-qna" onclick="resetThreeLinePrompter()" style="background-color:#6c757d;">🔙 처음으로</button>
                     <button class="btn-qna" onclick="playCurrentPromptTTS()" style="background-color:#007bff;">🔊 현재 문장 듣기</button>
-                    <div class="tts-speed-group" aria-label="현재 문장 듣기 속도 조절">
-                        <button class="tts-speed-btn" onclick="setTtsRate(0.8)">0.8배</button>
-                        <button class="tts-speed-btn active" onclick="setTtsRate(1)">1배</button>
-                        <button class="tts-speed-btn" onclick="setTtsRate(1.2)">1.2배</button>
-                        <button class="tts-speed-btn" onclick="setTtsRate(1.5)">1.5배</button>
-                    </div>
                 </div>
 
                 <!-- 슬라이드 영역에서 녹음 컨트롤을 제거했습니다. 새로운 위치는 상단 대시보드 영역에 있습니다. -->
@@ -834,19 +637,6 @@
         }
 
         // --- 브라우저 TTS (Web Speech API) ---
-        let ttsRate = 1;
-
-        function setTtsRate(rate) {
-            ttsRate = rate;
-            document.querySelectorAll('.tts-speed-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.innerText.trim() === `${rate}배`) {
-                    btn.classList.add('active');
-                }
-            });
-            showToast(`🔊 현재 문장 듣기 속도 ${rate}배`);
-        }
-
         function readText(text) {
             if (!text || text.includes("버튼을 눌러주세요")) {
                 showToast("읽을 텍스트가 없습니다."); return;
@@ -860,7 +650,7 @@
 
             const utterance = new SpeechSynthesisUtterance(cleanText);
             utterance.lang = 'ko-KR';
-            utterance.rate = ttsRate; // 현재 문장 듣기 속도
+            utterance.rate = 1.1; // 살짝 빠른 템포
             window.speechSynthesis.speak(utterance);
             showToast("🔊 텍스트를 읽고 있습니다...");
         }
@@ -987,52 +777,76 @@
         // --- 완벽한 전체 원본 대본 데이터 ---
         const presentationData = [
             {
-                slideNum: 1, imgSrc: "슬라이드0001.jpg", title: "[1번 슬라이드: 표지]",
-                script: `<div style="text-align: center; border-bottom: 2px dashed #ccc; padding-bottom: 10px; margin-bottom: 15px; font-size: 18px; color:#555;"><strong>창녕 안심이동 생태 테라리움 대본 (여유 8.5분 컷)</strong><br>발표자 : 온천꽃식물원 대표 이문숙</div><p><span class="cue-action">(※ 단상에 서서 바인더를 내려놓고, 심사위원과 눈을 맞춘 후 3초간)</span> <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">미소 짓고 시작합니다.</span></p><p><span class="cue-action">[고개 들고 심사위원 바라보며 당당하게]</span></p><p>"안녕하십니까. 기존 꽃집의 판매 한계를 넘어, 관광객, 기관, 그리고 온라인 고객에게 판매할 수 있는 로컬 식물 브랜드로 성장하고자 하는 온천꽃식물원 대표 이문숙입니다." <span class="cue-pause">[1초 쉬고]</span></p><p>오늘 제가 발표드릴 과제는 「창녕 안심이동 생태 테라리움 기프트」입니다.</p><p>이 사업은 단순히 예쁜 테라리움을 하나 더 만드는 것이 아닙니다.</p><p>기존 화훼 상품의 매출 한계와 이동 제약을 개선해서, 반복 판매가 가능한 로컬 식물 기프트로 전환하는 사업입니다.</p><p>발표 시작하겠습니다. <span class="cue-pause">[1초 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 1,
+                imgSrc: "슬라이드0001.jpg",
+                title: "[1번 슬라이드: 표지]",
+                script: `<p>안녕하십니까.</p><p>기존 화훼상품의 이동과 납품 한계를 개선하고, 창녕 지역자원을 결합한 안심이동형 생태 테라리움 기프트를 개발하는 온천꽃식물원 대표 이문숙입니다.</p>`
             },
             {
-                slideNum: 2, imgSrc: "슬라이드0002.jpg", title: "[2번 슬라이드: 문제정의]",
-                script: `<p>기존 화훼 소상공인의 가장 큰 고민은 두 가지입니다. <span class="cue-pause">[1초 쉬고]</span></p><p>첫째는 '매출의 시즌성'입니다.</p><p>어버이날이나 인사 철 같은 특정 시기에는 수요가 있지만, 비수기에는 매일 팔 수 있는 상시 상품이 부족합니다. <span class="cue-pause">[1초 쉬고]</span></p><p>둘째는 '이동과 배송의 불안정성'입니다.</p><p>화분이나 테라리움은 이동 중에 흔들리거나, 흙이 쏟아지고, 수분이 새고, 용기가 파손될 위험이 너무 큽니다.</p><p>이 때문에 관광객이 사 가기도 어렵고, 기관 단체 선물이나 택배 배송으로 확장하는 데 큰 한계가 있었습니다.</p><p>저희는 이 문제를 해결하여 사업 구조를 바꾸고자 합니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 2,
+                imgSrc: "슬라이드0002.jpg",
+                title: "[2번 슬라이드: 문제 정의]",
+                script: `<p>저는 창녕에서 20년 이상 화훼 현장에 참여해 왔습니다.</p><p>저희 같은 화훼 소상공인은 특정 행사나 인사이동 철에 매출이 몰리는 한계가 있습니다.</p><p>대량 납품을 하려고 해도 골판지를 하나하나 접어 끼우는 수작업에 의존해야 했고, 가족들이 직접 배송을 다녀야 했습니다.</p><p>이동 중 식물이 쏠리거나, 화분이 파손되거나, 물이 샐까 봐 늘 조마조마했습니다.</p><p>이 문제는 저희 가게만의 어려움이 아니라, 기존 화훼 소상공인이 대량 납품과 온라인 판매로 확장할 때 반복적으로 마주하는 이동, 파손, 포장 비효율의 문제라고 생각했습니다.</p>`
             },
             {
-                slideNum: 3, imgSrc: "슬라이드0003.jpg", title: "[3번 슬라이드: 해결방안]",
-                script: `<p>해결책은 바로,</p><p>'우리 지역의 이야기'와 '이동 중 흔들림을 줄이는 포장 구조'의 결합입니다. <span class="cue-pause">[1초 쉬고]</span></p><p>부곡온천과 우포늪의 맑은 생태 이미지를 용기 속에 담고,</p><p>여기에 온천꽃식물원이 창녕 따오기를 모티브로 자체 기획한 캐릭터 '따오'를 적용합니다. <span class="cue-pause">[1초 쉬고]</span></p><p>그리고 가장 중요한 것.</p><p>관광객이 들고 이동하거나 택배로 배송될 때, 흔들림과 파손, 누수 위험을 줄일 수 있는 '안심이동형 패키지 구조'를 적용하는 것입니다.</p><p>이제 매장 진열을 넘어, 관광객 휴대와 기관 납품, 온라인 배송까지 가능한 상품으로 전환하겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 3,
+                imgSrc: "슬라이드0003.jpg",
+                title: "[3번 슬라이드: 해결 방안]",
+                script: `<p>이 문제를 해결하기 위해 저희는 창녕의 자원을 담은 생태 테라리움 기프트를 개발하고자 합니다.</p><p>부곡온천, 우포늪, 창녕 따오기 캐릭터 ‘따오’를 상품 안에 담고, 이동 중 흔들림을 줄이는 안심이동형 패키지 구조를 적용합니다.</p><p>일반 화분보다 작게 만들 수 있고, 손님이 들고 가기 쉬워 관광객 휴대와 선물 상품으로 확장하기에 적합합니다.</p><p>즉, 단순 장식 상품이 아니라 개인 손님, 기관·단체 손님, 온라인 고객까지 판매할 수 있는 구조형 로컬 식물 기프트입니다.</p>`
             },
             {
-                slideNum: 4, imgSrc: "슬라이드0004.jpg", title: "[4번 슬라이드: 5중 이동안정 구조]",
-                script: `<p>이번 과제의 핵심인 '5중 이동안정 구조'입니다. <span class="cue-pause">[1초 쉬고]</span></p><p><span class="cue-action">[고개 들고 심사위원 바라보며 힘주어]</span></p><p>"기존 박스에 완충재만 넣는 수준이 아니라, 용기의 위, 옆, 아래를 함께 잡아주는 구조입니다." <span class="cue-pause">[1초 쉬고]</span></p><p>첫째, 입구 고정링으로 용기 입구를 잡아 이탈을 막고,</p><p>둘째, 옆면 충격 완충패드로 이동 중 옆 충격을 줄입니다.</p><p>셋째, 둥지형 받침대로 용기 아래를 감싸 흔들림을 잡고,</p><p>넷째, 바닥 충격흡수판으로 차량과 택배 진동을 줄입니다.</p><p>마지막으로 미끄럼 방지 패드를 더해 바닥 미끄럼과 넘어짐 위험을 줄입니다. <span class="cue-pause">[1초 쉬고]</span></p><p>저희는 이 구조를 실제 이동 테스트를 통해 보완하고, 차량 이동과 택배 배송 시 흔들림, 누수, 파손 위험을 최소화하는 기준을 만들겠습니다. <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 4,
+                imgSrc: "슬라이드0004.jpg",
+                title: "[4번 슬라이드: 핵심 기술]",
+                script: `<p>저희가 개발하고자 하는 핵심은 5중 이동안정 패키지 구조입니다.</p><p>박스 안에 완충재만 넣는 방식이 아닙니다.</p><p>용기 윗부분을 잡아주는 입구 고정링, 좌우 흔들림을 줄이는 측면 완충패드, 아래를 받치는 둥지형 받침대, 바닥 충격흡수판, 미끄럼 방지패드를 함께 적용합니다.</p><p>이 구조는 단순 포장이 아니라, 용기를 위, 옆, 아래에서 잡아주는 패키지 구조 개선입니다.</p><p>흔들림 억제 구조와 충격 분산 구조를 함께 적용해, 차량 이동 중 쏠림, 전도, 누수, 파츠 이탈 위험을 줄이는 방향으로 개발하겠습니다.</p>`
             },
             {
-                slideNum: 5, imgSrc: "슬라이드0005.jpg", title: "[5번 슬라이드: 따오 캐릭터와 상품 라인업]",
-                script: `<p>다음은 저희 상품의 매력 포인트인 캐릭터입니다. <span class="cue-action">[미소 지으며 1초 쉬고]</span></p><p>화면에 보이시는 캐릭터는 저희 온천꽃식물원이 직접 기획하고 이름 붙인 '따오'입니다.</p><p>따오기는 창녕 우포늪의 상징이고, 따오는 온천꽃식물원의 자체 캐릭터입니다. <span class="cue-pause">[1초 쉬고]</span></p><p><span class="cue-action">[고개 들고 심사위원 바라보며 환하게 웃으며]</span></p><p>"관광객들이 쉽고 친근하게 기억하실 수 있도록, '우포늪 방문했따오~' 처럼 따오기에서 따온 짧고 귀여운 이름으로 정했습니다." <span class="cue-pause">[1초 쉬고]</span></p><p>이 따오는 단순한 장식이 아닙니다. 창녕을 기억하게 하는 저희만의 로컬 콘텐츠 자산입니다.</p><p>이 캐릭터를 테라리움 완제품은 물론, 직접 만드는 키트, 스토리카드, 선물 패키지에도 반복해서 활용할 계획입니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 5,
+                imgSrc: "슬라이드0005.jpg",
+                title: "[5번 슬라이드: 검증 계획]",
+                script: `<p>검증은 실험하고, 기록하고, 분석하고, 다시 보완하는 방식으로 추진하겠습니다.</p><p>먼저 소형과 대형, 두 가지 규격을 개발합니다. 소형은 관광객 휴대와 체험형 DIY 키트용이고, 대형은 기관·단체 답례품용입니다.</p><p>차량 이동, 기울임, 반복 흔들림 조건에서 쏠림, 전도, 누수, 파츠 이탈이 생기는지 확인하겠습니다.</p><p>반복 횟수와 이상 발생 여부는 기록표로 남기고, 그 결과를 기준으로 최종 규격을 조정하겠습니다.</p><p>유상 시범판매 30건과 고객 반응 50건을 모아 최종 규격과 포장 방법을 보완하겠습니다.</p><p>또 유상 시범판매 30건 기준으로 파손·누수 민원 0건을 목표로 하고, 이상이 생기면 그 내용을 기록해 구조를 다시 보완하겠습니다.</p><p>최종적으로 생태 테라리움 5종, 대표상품 1종, 이동안정 패키지 5종, 제작 매뉴얼 1식을 남기겠습니다. 필요할 경우 외부 전문가나 시험기관 검증도 추진하겠습니다.</p>`
             },
             {
-                slideNum: 6, imgSrc: "슬라이드0006.jpg", title: "[6번 슬라이드: 체험형·배송형 상품 확장]",
-                script: `<p>안심이동 구조가 완성되면, 상품을 다양하게 확장하겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>첫째, 고객이 생태 소품을 직접 조립하는 '체험형 키트'입니다.</p><p>둘째, 부품별로 안전하게 포장해 전국으로 보내는 '온라인 배송형 키트'입니다.</p><p>셋째, 지역 스토리카드와 관리카드를 함께 넣어 선물의 가치를 높이겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>그리고 앞으로는 테라리움뿐만 아니라 누구나 키우기 쉬운 '다육이' 같은 식물로 종류를 넓히고, 우리 귀여운 '따오' 캐릭터를 화분에 꽂는 '식물 장식 픽(Pick)'이나 원예 소품으로 만들어서 다른 꽃집들에도 납품하는 진짜 로컬 브랜드로 키워가겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 6,
+                imgSrc: "슬라이드0006.jpg",
+                title: "[6번 슬라이드: 따오 브랜딩]",
+                script: `<p>완성된 구조 위에 창녕의 정체성을 입혔습니다.</p><p>창녕 따오기를 모티브로 개발한 로컬 캐릭터 ‘따오’입니다.</p><p>따오는 단순한 장식물이 아닙니다.</p><p>완제품, DIY 키트, 패키지, 스토리카드에 반복 적용되는 브랜드 자산입니다.</p><p>이를 통해 일반 테라리움이나 관광기념품과 다른 차별성을 만들겠습니다.</p><p>따오 캐릭터와 패키지 디자인은 상표나 디자인권으로 보호할 수 있는지도 함께 검토하겠습니다.</p>`
             },
             {
-                slideNum: 7, imgSrc: "슬라이드0007.jpg", title: "[7번 슬라이드: 3단계 판로 확장]",
-                script: `<p>판매 전략은 3단계로 진행하겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>1단계는 부곡온천 관광상권 실증입니다. 숙박업소 웰컴기프트와 연계하여 실제 구매 반응을 먼저 확인하겠습니다.</p><p>2단계는 창녕군 관광 및 기관 수요 확장입니다. 우포늪과 지역 행사, 관공서 답례품 수요와 연결해 창녕 대표 로컬 기프트로 자리 잡겠습니다.</p><p>3단계는 온라인 배송형 상품 전환입니다. 안전한 패키지를 무기로 스마트스토어와 SNS를 통한 전국 배송 판매를 검증하겠습니다.</p><p>부곡온천을 첫 번째 실증 거점으로 삼아 차근차근 확장하겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 7,
+                imgSrc: "슬라이드0007.jpg",
+                title: "[7번 슬라이드: 상품군 확장]",
+                script: `<p>개발된 구조를 바탕으로 상품군은 세 가지로 확장합니다.</p><p>첫째, 관광객 휴대와 기관 납품용 완제품형입니다.</p><p>둘째, 숙박업소나 지역행사와 연결할 체험형 DIY 키트입니다.</p><p>셋째, 부품별 개별 포장으로 파손 우려를 낮춘 온라인 배송형 키트입니다.</p><p>개인 손님인 B2C, 기관·단체 손님인 B2B, 온라인 직접판매인 D2C로 나누어 판매 가능성을 검증하겠습니다.</p>`
             },
             {
-                slideNum: 8, imgSrc: "슬라이드0008.jpg", title: "[8번 슬라이드: 시장 검증]",
-                script: `<p>이 과정을 위해, 사업 기간 내에 철저히 시장을 검증하겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>첫째, 안심이동 구조를 검증하기 위해 시범판매 30건 이상을 직접 추진하겠습니다.</p><p>둘째, 고객 반응 50건 이상을 수집하여 휴대 편의성과 누수 불안이 줄었는지 확인하겠습니다.</p><p>셋째, 숙박업소와 기관에 제휴 제안 10곳을 진행하고, 실제 연계처 3곳 이상을 확보하겠습니다.</p><p>개발 단계부터 판매 반응과 제휴 가능성을 함께 검증하겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 8,
+                imgSrc: "슬라이드0008.jpg",
+                title: "[8번 슬라이드: 판매 전략]",
+                script: `<p>판로는 무리하지 않고 가까운 곳부터 넓히겠습니다.</p><p>초기 목표시장은 전국 화훼시장이 아닙니다.</p><p>부곡온천 관광상권, 기존 매장 고객, 외부 매대 고객, 창녕 지역 기관·단체 선물 수요입니다.</p><p>먼저 매장과 부곡온천 관광상권을 1차 실증 거점으로 삼아 시범판매를 추진하겠습니다.</p><p>완제품 배송은 단계적으로 검증하고, 초기에는 매장 판매와 DIY 키트형 판매를 함께 운영하겠습니다.</p><p>다음으로 창녕 관내 기관과 단체의 행사, 답례품, 인사이동 선물 수요에 맞춰 제안하겠습니다.</p><p>이후 스마트스토어와 랜딩페이지를 구축해 온라인 직접판매와 DIY 배송형 키트 판매로 확장하겠습니다.</p>`
             },
             {
-                slideNum: 9, imgSrc: "슬라이드0009.jpg", title: "[9번 슬라이드: 예산 집행계획]",
-                script: `<p>총 사업비 1억 1,120만 원에 대한 집행 계획입니다. <span class="cue-action">[목소리에 힘을 주며]</span></p><p>정부지원금 1억 원은 상품 구조 개발과 판매 기반 구축에 맞춰 체계적으로 집행하겠습니다.</p><p>이 돈은 단순 포장재 구입비나 홍보비가 아닙니다. <span class="cue-pause">[1초 쉬고]</span></p><p>기술개발비는 테라리움 시제품 제작, 이동안정 구조 테스트, 캐릭터 개발, 그리고 누구나 똑같이 만들 수 있는 '제작 매뉴얼'을 구축하는 데 집중하겠습니다.</p><p>사업화비는 온라인 판매 기반 구축과 제휴 영업 자료 제작에 사용하여, 지원사업 종료 후에도 스스로 운영 가능한 지속적 반복 판매 구조를 만들겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 9,
+                imgSrc: "슬라이드0009.jpg",
+                title: "[9번 슬라이드: 시장 검증 목표]",
+                script: `<p>협약기간 내 성과는 숫자로 확인하겠습니다.</p><p>현재 업무협약서 2건과 구매의향서 2건을 기타서류로 제출했습니다.</p><p>또 기존 거래처 2곳의 판매 접점과 매장 고객 반응을 활용할 수 있습니다.</p><p>협약기간 안에는 유상 시범판매 30건, 고객 반응 50건 이상을 수집하겠습니다.</p><p>또 기관 제휴 제안 10곳, 시범 연계처 3곳 이상을 목표로 현장에서 직접 검증하겠습니다.</p><p>판매 수량, 고객 반응, 이동 중 문제 여부를 확인해서 감이 아니라 기록을 기준으로 상품을 보완하겠습니다.</p>`
             },
             {
-                slideNum: 10, imgSrc: "슬라이드0010.jpg", title: "[10번 슬라이드: 수행역량]",
-                script: `<p>저의 실행 역량입니다. <span class="cue-action">[가슴을 펴고 당당하게]</span></p><p>저는 2000년부터 화훼 현장을 뛰었고, 2015년부터 식물원을 운영해 왔습니다.</p><p>어떤 식물이 관리가 쉽고, 고객이 어떤 포인트에서 구매를 결정하는지 현장 경험으로 잘 알고 있습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>이번 사업에서는 이 20년의 경험을 제 개인의 노하우로만 남겨두지 않겠습니다.</p><p>제작과 포장 매뉴얼, 온라인 운영체계로 표준화하겠습니다.</p><p>대표 한 명에게 의존하는 꽃집을 넘어, 체계적으로 반복 제작과 판매가 가능한 조직으로 전환하겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 10,
+                imgSrc: "슬라이드0010.jpg",
+                title: "[10번 슬라이드: 사업비 집행계획]",
+                script: `<p>사업비는 총 1억 1,120만 원입니다.</p><p>이 중 정부지원금은 1억 원, 자부담은 1,120만 원입니다.</p><p>기술개발비 약 7천2백만 원은 테라리움 시제품, 이동안정 패키지, 따오 3D 파츠, 검증과 표준화에 사용하겠습니다.</p><p>사업화비 3천9백만 원은 온라인 판매기반 구축, 제휴 상담자료 제작, 시범판매 홍보, 고객반응 분석에 활용하겠습니다.</p><p>각 예산 항목은 시제품, 패키지 구조, 제작 매뉴얼, 판매자료, 고객반응 분석표 같은 산출물과 연결해 집행하겠습니다.</p><p>단순 홍보비가 아니라, 개발 결과를 실제 판매와 검증으로 연결하기 위한 비용입니다.</p>`
             },
             {
-                slideNum: 11, imgSrc: "슬라이드0011.jpg", title: "[11번 슬라이드: 기대효과]",
-                script: `<p>본 사업의 기대효과는 세 가지입니다.</p><p>첫째, 시즌성 한계를 벗어나 상시 판매 가능한 안심 상품군을 만들고,</p><p>둘째, 창녕 우포늪과 따오기를 알리는 로컬 상생을 실천하며,</p><p>셋째, 지원사업이 끝난 후에도 지속 운영 가능한 사업 확장성을 만들어가겠습니다.</p><p>단순 꽃 판매를 넘어, 생활문화형 로컬 브랜드로 성장하겠습니다. <span class="cue-pause">[길게 쉬고]</span> <span class="cue-action">[화면 넘김 클릭]</span></p>`
+                slideNum: 11,
+                imgSrc: "슬라이드0011.jpg",
+                title: "[11번 슬라이드: 수행 역량]",
+                script: `<p>이번 과제의 가장 단단한 기반은 저의 현장 경험입니다.</p><p>저는 2000년부터 화훼 현장에 참여했고, 2015년부터 온천꽃식물원을 운영해 왔습니다.</p><p>식물 소재 선정, 제작, 고객 응대, 납품 경험을 직접 쌓아왔습니다.</p><p>신규 인력은 제작과 포장 표준화, 고객 반응 수집, 온라인 판매자료 관리를 맡습니다.</p><p>3D 파츠, 패키지 설계, 상세페이지 같은 전문 분야는 외부 협력사와 함께 보완하겠습니다.</p><p>기존 매장과 작업·적재 공간을 활용해, 사업 시작 후 바로 소량 제작과 포장 안정성 확인을 진행할 수 있습니다.</p>`
             },
             {
-                slideNum: 12, imgSrc: "슬라이드0012.jpg", title: "[12번 슬라이드: 마무리]",
-                script: `<p>정리하겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p>저희 온천꽃식물원은 기존 꽃집의 매출 한계와 배송의 불편을 개선하고자 합니다.</p><p>창녕의 자원을 담은 테라리움에 안심이동 구조를 결합해, 관광객, 기관, 온라인 고객이 모두 구매할 수 있는 '로컬 식물 기프트'로 전환하겠습니다. <span class="cue-pause">[1초 쉬고]</span></p><p><span class="cue-action">[고개 들고 심사위원 바라보며 힘차고 따뜻하게]</span></p><p>"창녕의 아름다운 자연을 전국 고객에게 안전하게 전달하겠습니다. 끝까지 경청해 주셔서 감사합니다."</p><p><span class="cue-action">(※ 정중하게 허리 숙여 인사)</span></p>`
+                slideNum: 12,
+                imgSrc: "슬라이드0012.jpg",
+                title: "[12번 슬라이드: 기대효과 및 마무리]",
+                script: `<p>이번 사업을 통해 온천꽃식물원은 계절에만 매달리던 매출 구조에서 벗어나, 상시 반복판매가 가능한 상품군을 확보하겠습니다.</p><p>또 창녕의 부곡온천과 우포늪, 따오 캐릭터를 생활 속 선물상품으로 만들겠습니다.</p><p>사업이 끝난 뒤에도 이동안정 패키지, 제작 매뉴얼, 따오 로컬 콘텐츠, 온라인 판매기반은 남는 자산이 됩니다.</p><p>기존 꽃집 상품을 지역성과 이동안정 구조가 결합된 생활문화형 로컬 식물 기프트로 고도화하겠습니다.</p><p>경청해 주셔서 감사합니다.</p>`
             }
         ];
 
@@ -1091,27 +905,54 @@
 
         // --- Q&A 원본 답변 데이터 (21문항 전체) ---
         const qnaDataMaster = [
-            { id: 1, type: "일반", title: "사업 동기", attack: "동네 꽃집 하시면서 왜 굳이 국비 1억씩이나 나오는 큰 사업에 지원하셨습니까?", mild: "이번 소상공인 지원사업에 참여하게 된 특별한 동기나 계기가 있으신가요?", answer: "제가 부곡에서 나고 자라 20년 넘게 이 동네에서 꽃집을 했습니다. 고향에 대한 애정이 각별한데, 늘 비수기나 배달 문제로 한계를 느꼈습니다. 마침 딸이 우리 동네 특색 살려서 이런 거 한번 제대로 해보자고 도와줘서 용기를 냈습니다. 이 사업으로 우리 '따오' 캐릭터가 잘 돼서 부곡온천이랑 같이 상생하는 로컬 브랜드를 꼭 만들어보고 싶습니다." },
-            { id: 2, type: "일반", title: "차별성", attack: "예쁜 테라리움은 시중에 널렸는데, 대표님 제품만의 진짜 경쟁력이 뭡니까?", mild: "기존 테라리움 상품들과 비교했을 때, 이 제품의 가장 큰 차별점은 무엇일까요?", answer: "맞습니다. 예쁜 화분은 세상에 정말 많습니다. 저희의 무기는 '안전성'입니다. 무거운 유리가 아니라 가벼운 '플라스틱 용기'를 쓰고, 흔들림을 줄여주는 5중 포장 구조에 창녕 스토리를 담은 겁니다. 그래서 관공서 인사이동 시즌에 흔한 호접란 대신, 기존 화분보다 이동 부담을 줄이고, 기관 선물이나 관광객 휴대 상품으로 확장할 수 있다는 점이 저희만의 차별점입니다." },
-            { id: 3, type: "일반", title: "필요성", attack: "소상공인이 이렇게 복잡한 기획까지 해가며 사업을 벌일 필요가 있습니까?", mild: "이 안심이동 기프트를 꼭 지금 개발하셔야 하는 이유가 있을까요?", answer: "요즘 동네 꽃집들이 참 많이 어렵습니다. 부곡온천에 수많은 분들이 놀러 와도 들고 가기 불편해서 식물을 못 사 가시는 걸 보며 늘 안타까웠습니다. 이 '안심 포장' 문제만 해결된다면, 관광객분들께 좋은 추억을 드리고 저 같은 소상공인도 사계절 내내 일할 수 있는 돌파구가 될 것이라 확신했습니다." },
-            { id: 4, type: "압박", title: "기술/파손 방어", attack: "솔직히 흙이랑 식물인데 택배로 막 던지면 다 깨지거나 엎어지는 거 아닙니까?", mild: "택배 배송을 할 때 흙이나 식물이 쏟아질 우려는 없을까요?", answer: "위원님 말씀이 맞습니다. 저희가 튼튼한 플라스틱 용기를 쓴다고 해도, 흙이랑 식물이 다 들어있는데 택배로 막 던지면 엎어질 수밖에 없죠. 그래서 저희가 내린 결론은, 관광객이 직접 들고 가거나 동네 납품은 '안심 포장 완제품'으로 가고, 택배로 멀리 가는 건 직접 만드는 'DIY 조립 키트'로만 파는 겁니다. 무리하게 완제품 택배를 고집하지 않고, 배송 위험을 근본적으로 줄이는 방향으로 단계적 확장을 하겠습니다." },
-            { id: 5, type: "압박", title: "방어 전략", attack: "박스 포장 구조, 조금만 눈썰미 있으면 다른 데서 금방 따라 할 텐데 방어 전략이 있습니까?", mild: "다른 업체에서 비슷한 포장을 출시하면 어떻게 대응하실 계획인가요?", answer: "박스 형태는 누구나 흉내 낼 수 있다는 지적 인정합니다. 그래서 저희가 '따오' 캐릭터와 상품명, 패키지 구조는 상표·디자인권·특허 출원을 검토해 권리화하겠습니다. 남들이 흉내 내기 전에, 저희가 먼저 부곡온천 호텔이나 관공서에 성실하게 납품하면서 '믿고 살 수 있는 곳'으로 꽉 잡아두는 것이 최고의 방어라고 생각합니다." },
-            { id: 6, type: "압박", title: "온라인 경쟁", attack: "이미 대형 온라인 꽃 배달 업체들이 많은데, 어떻게 경쟁하실 겁니까?", mild: "기존의 온라인 화훼 배송 서비스들과는 어떤 차별화된 전략으로 다가가실 건가요?", answer: "대형 업체들이 온라인을 꽉 잡고 있는 것은 사실입니다. 하지만 생태 테라리움은 식물과 흙이 포함되어 있어 일반 꽃 배송과 달리 포장 안정성 확보가 중요합니다. 저희는 가벼운 플라스틱 용기에 자체 개발한 포장 매뉴얼, 그리고 파손 위험 없는 'DIY 조립 키트'를 무기로 이 틈새시장을 파고들겠습니다." },
-            { id: 7, type: "압박", title: "지역 경쟁", attack: "다른 지역 꽃집에서 똑같이 지역 캐릭터 만들어서 키트 팔면 어떻게 이길 겁니까?", mild: "비슷한 로컬 굿즈들이 많이 나올 수 있는데, 식물원만의 경쟁력은 무엇일까요?", answer: "비슷한 상품이 나오는 건 장사하면서 늘 겪는 일입니다. 그래서 저희는 테라리움 하나에만 매달리지 않고, 귀여운 '따오 장식 픽', '따오 스티커', '다육이 화분' 등 여러 상품군을 만들 계획입니다. 나중엔 저희가 창녕 군내 다른 소품샵이나 꽃집들에 이 부자재를 납품하는 쪽으로 상생하면서 사업을 넓혀가겠습니다." },
-            { id: 8, type: "압박", title: "타깃 고객", attack: "창녕까지 오는 사람들이 굳이 테라리움을 살까요? 구체적으로 누구한테 팔 겁니까?", mild: "이 상품의 핵심 타깃 고객은 누구이며, 어떻게 홍보하실 계획인가요?", answer: "처음에는 저희 앞마당인 부곡온천 관광객이 1차 타깃입니다. 시범 판매로 손님들 반응을 꼼꼼히 살피면서 완성도를 높이겠습니다. 나중에 시범판매 반응이 확인되면, 검증된 상품 위주로 숙박업소·기관·온라인 채널에 단계적으로 확장하겠습니다." },
-            { id: 9, type: "압박", title: "시장 규모", attack: "부곡온천 상권 하나만 보고 1억 원짜리 사업을 하겠다는 건 시장이 너무 좁은 것 아닙니까?", mild: "부곡온천에서 시작하시는데, 앞으로 시장 규모나 수요는 어떻게 전망하시나요?", answer: "부곡온천만 하고 끝내겠다는 게 아닙니다. 동네 상권이라 작아 보일 수 있지만, 부곡은 온천에, 가족탕에, 스포츠파크 전지훈련과 각종 공연까지 사시사철 외부 유동인구가 엄청난 핵심 관광지입니다. 여기서 초기 검증을 단단히 마치고 관광객 휴대형 상품과 기관 선물 수요를 함께 검증하면, 부곡온천을 넘어 창녕 관광·기관·온라인 시장으로 확장할 근거를 만들 수 있습니다." },
-            { id: 10, type: "압박", title: "역량 방어", attack: "연세도 있으신데 상품 개발에 온라인 마케팅까지 대표님 혼자 감당이 되십니까?", mild: "다양한 업무가 필요할 텐데, 팀원이나 파트너 등 어떻게 실행해 나가실 계획인가요?", answer: "솔직히 50대 후반인 저 혼자 컴퓨터나 마케팅을 완벽하게 하기는 어렵습니다. 그래서 딸이 전폭적으로 돕고 있고, 제가 부족한 디자인이나 온라인 분야는 전문 업체에 맡기고 신규 직원을 채용해 해결할 겁니다. 대신 저는 20년 현장 경험으로 살려 상품 퀄리티를 높이고 동네 영업을 뛰는 데 전념하겠습니다." },
-            { id: 11, type: "일반", title: "정부지원금 필요성", attack: "지금 하시는 장사 잘 고도화하면 되는데, 꼭 국비 1억 원을 받아야만 가능한 사업입니까?", mild: "이번 사업에서 정부지원금이 대표님 사업 성장에 구체적으로 어떤 도움을 주게 되나요?", answer: "제 돈으로 그냥 재료 사서 몇개 더 파는 거면 지원금 안 받습니다. 흔들림을 막는 특수 포장틀을 제대로 설계하고, 누가 와도 똑같이 조립할 수 있는 '제작 매뉴얼' 시스템을 만들고 패키지 구조와 캐릭터, 상품명을 권리화하고 제작 매뉴얼까지 구축하려면 소상공인 혼자 힘으론 너무 벅차서 정부의 도움을 꼭 받고 싶습니다." },
-            { id: 12, type: "압박", title: "예산 사용처", attack: "1억 원 받아서 포장지 인쇄하고 끝나는 거 아닙니까? 어디에 어떻게 쓸 겁니까?", mild: "지원받으시는 예산은 주로 어떤 항목과 개발에 사용하실 예정이신가요?", answer: "단순 포장지 인쇄에 낭비하지 않겠습니다. 저희 플라스틱 용기에 딱 맞는 '알형 케이스'나 흔들림을 잡는 '둥지형 받침대' 같은 맞춤형 특수 포장틀을 제대로 설계해서 제작하고, 이 구조를 시제품으로 만들고 흔들림·누수·전도 위험을 검증한 뒤, 제작·포장 매뉴얼로 표준화하는 데 예산을 집중하겠습니다." },
-            { id: 13, type: "일반", title: "확장성", attack: "시장이 좁은데 테라리움 인기가 식으면 사업도 같이 끝나는 거 아닙니까?", mild: "테라리움 이후에 사업을 지속적으로 확장할 수 있는 후속 계획이 있으신가요?", answer: "그런 위험이 있어서 테라리움에만 의존하지 않을 계획입니다. 포장 구조와 '따오' 캐릭터가 자리 잡으면, 누구나 관리가 쉬운 '다육이' 화분 등으로도 상품을 늘릴 겁니다. 또 '따오 화분 픽'이나 부자재를 지역 내 다른 가게에 납품하면서 사업을 안정적으로 이어가겠습니다." },
-            { id: 14, type: "일반", title: "단기 목표", attack: "말은 거창한데, 당장 올해 안에 어디까지 해낼 수 있다는 겁니까? 올해의 목표는 무엇이죠?", mild: "이번 협약 기간(올해) 내에 달성하고자 하는 가장 구체적인 목표는 무엇인가요?", answer: "무턱대고 많이 파는 게 목표가 아닙니다. 흔들림을 최소화하는 '포장 매뉴얼'을 완성하는 게 최우선입니다. 시제품이 나오면 바로 30개를 시범 판매해서 손님들이 들고 가기 편한지 직접 확인하고 보완하겠습니다. 그리고 연말까지 근처 호텔이나 기관 3곳 이상에 단체 납품을 성사시키는 게 현실적인 목표입니다." },
-            { id: 15, type: "압박", title: "대표자 역량", attack: "대표님이 꼭 이 사업을 성공시킬 수 있다고 심사위원들을 설득해 보십시오.", mild: "대표님께서 이 사업을 가장 잘 해내실 수 있는 대표님만의 강점은 무엇인가요?", answer: "저는 이 지역에서 20년 넘게 꽃집을 해왔습니다. 우리 지역 사람들이 어떤 시즌에, 어떤 선물에 돈을 쓰는지 제가 현장에서 뼈저리게 겪었기에 누구보다 잘 안다고 자부합니다. 저에 대한 동네 사람들의 든든한 '신뢰'에 안전한 포장 시스템만 더해지면 차근차근 확실한 성과를 내겠습니다." },
-            { id: 16, type: "일반", title: "가격 및 규격", attack: "포장비까지 들이면 너무 비싸서 안 팔리지 않겠습니까? 사이즈랑 가격이 어떻게 됩니까?", mild: "실제 고객들이 구매할 때 가격대와 상품의 대략적인 크기는 어느 정도로 예상하시나요?", answer: "관광객들이 부담 없이 사시도록, 플라스틱 용기 크기는 '테이크아웃 커피잔'부터 '작은 수반' 정도로 맞추겠습니다. 가격도 관광객이 편하게 사는 소형이나 DIY 키트는 2~3만 원대, 관공서 납품용 고급형은 5만 원 전후로 딱 정해서 손님들 부담을 줄이면서도 마진을 확보하겠습니다." },
-            { id: 17, type: "일반", title: "상품 수명", attack: "생물인데 금방 시들거나 죽지 않습니까? 선물 받았는데 죽어 버리면 클레임 들어올 텐데요?", mild: "식물이라 관리가 어려울 수도 있을 것 같은데, 이 부분은 어떻게 보완하셨나요?", answer: "식물이니까 관리를 못 하면 죽을 수도 있죠. 하지만 테라리움은 일반 화분보다 관리가 수월하고 오래갑니다. 또 앞으로는 알아서 잘 자라는 '다육이'로도 확장할 거고요. 꼼꼼한 '관리 카드'를 꼭 동봉해 드리고, 식물 관리 리스크를 줄이기 위해 관리 난이도가 낮은 식물과 이끼·다육 소재를 우선 적용하고, 관리카드를 함께 제공하겠습니다. 시범판매 과정에서 고객이 어려워하는 부분을 확인해 상품 구성과 안내문을 계속 보완하겠습니다." },
-            { id: 18, type: "일반", title: "연령대 방어", attack: "부곡온천 가면 나이 드신 분들이 대충 씻고 가는 분들이 많은데, 이런 디자인 상품을 사 가겠습니까?", mild: "부곡온천을 찾는 다양한 연령층 중 특히 어떤 분들이 이 상품을 좋아할 것으로 기대하시나요?", answer: "부곡온천에 어르신들만 온다고 생각하시기 쉽지만, 사실 가족탕이나 키즈룸이 잘 되어 있어서 영유아를 데리고 오는 30~40대 학부모님들이 정말 많습니다. 또 스포츠파크가 있어서 10대 학생들과 가족 단위 수요도 엄청납니다. 귀여운 '따오' 캐릭터는 이런 가족 단위 고객에게 접근성을 높이는 요소가 될 수 있습니다." },
-            { id: 19, type: "압박", title: "불경기의 매출", attack: "요즘 불경기에 동네 꽃집에서 5만 원짜리 세트가 잘 팔리겠어요?", mild: "소비 심리가 위축된 상황에서, 고객들이 부담 없이 구매할 수 있는 전략이 있으신가요?", answer: "불경기에 지갑이 얇아진 건 사실입니다. 그래서 일반 관광객분들께는 2~3만 원대의 가벼운 상품과 DIY 키트 위주로 권해드릴 생각입니다. 5만 원대 프리미엄 상품은 개인 손님이 아니라, 예산이 미리 정해져 있는 관공서 인사이동 선물이나 호텔 VIP 답례품으로 돌려서 납품할 계획입니다." },
-            { id: 20, type: "압박", title: "카피 방어/신뢰", attack: "아이디어가 참 좋은데, 다른 꽃집들이 따오기 이름 붙여서 더 싸게 베껴 팔면 어쩔 겁니까?", mild: "유사한 콘셉트의 상품이 주변에 생겼을 때, 식물원만의 신뢰를 유지할 방법이 있을까요?", answer: "비슷한 게 나오는 건 어쩔 수 없겠죠. 하지만 제가 20년 동안 이 동네에서 활동하며 관공서나 이웃들과 쌓아온 '신뢰'는 하루아침에 베낄 수 없습니다. 품질만큼은 저를 믿고 주문해 주시기에 그 신뢰를 바탕으로 납품처를 단단히 다져놓고, 오히려 다른 꽃집에는 저희 부자재를 도매로 납품하는 쪽으로 긍정적인 상생을 해보겠습니다." },
-            { id: 21, type: "압박", title: "리스크 관리", attack: "1억 원 다 썼는데 안 팔리면 정부 지원금 그냥 허공에 날리는 거 아닙니까?", mild: "혹시 시장 반응이 예상과 다를 경우를 대비한 리스크 관리나 테스트 계획이 있으신가요?", answer: "무턱대고 수천 개씩 찍어내는 그런 방식은 위험하다고 생각합니다. 그래서 저희가 조심스럽게 돌다리를 두드려보려는 겁니다. 시제품 나오자마자 딱 30개만 시범 판매해서, 손님들한테 어디가 불편한지 꼼꼼하게 물어보고 고친 다음에 납품을 늘릴 겁니다. 귀한 지원금 헛되이 쓰지 않게 차근차근 검증하며 넓혀가겠습니다." }
+            {
+                id: 1,
+                type: "일반",
+                title: "상품·차별성",
+                attack: "테라리움인가요? 기존 꽃집 상품과 뭐가 다른가요? 차별점이 뭔가요? 왜 이 상품이어야 하나요?",
+                mild: "테라리움이나 상품 차별성 관련 질문",
+                answer: "저희 과제는 예쁜 테라리움을 하나 더 만드는 것이 아니라, 이동과 납품이 가능한 구조형 로컬 식물 기프트를 개발하는 과제입니다. 기존 화분이나 테라리움은 이동 중 흔들림, 쏠림, 누수, 파츠 이탈 우려가 있어 관광객 휴대나 기관 납품으로 확장하기 어려웠습니다. 저희는 창녕 지역성에 안심이동형 패키지 구조를 결합해 기존 꽃집 상품을 생활문화형 로컬 상품으로 고도화하겠습니다."
+            },
+            {
+                id: 2,
+                type: "압박",
+                title: "기술·검증",
+                attack: "기술성이 약한 것 아닌가요? 그냥 포장 아닌가요? 검증은 어떻게 하나요? 정말 안전한가요? 파손·누수는 어떻게 줄이나요?",
+                mild: "기술이나 검증 관련 질문",
+                answer: "핵심은 5중 이동안정 패키지 구조입니다. 입구 고정링, 측면 완충패드, 둥지형 받침대, 바닥 충격흡수판, 미끄럼 방지 패드로 용기를 위·옆·아래에서 잡아주는 방식입니다. 소형·대형 2개 규격을 우선 개발하고, 차량 이동·기울임·반복 흔들림 조건에서 쏠림·전도·누수·파츠 이탈 여부를 기록표로 검증하겠습니다."
+            },
+            {
+                id: 3,
+                type: "압박",
+                title: "시장·수요·판로",
+                attack: "실제로 팔리나요? 수요가 있나요? 시장성이 있나요? 판로는 어떻게 확보하나요? 누가 사나요?",
+                mild: "시장·수요·판로 관련 질문",
+                answer: "처음부터 전국 시장을 크게 잡지 않고, 부곡온천 관광상권과 창녕 지역 기관·단체 수요부터 검증하겠습니다. 초기 수요 가능성은 업무협약서 2건과 구매의향서 2건으로 보완했고, 기존 매장 고객과 외부 매대 판매 경험도 활용할 수 있습니다. 협약기간에는 유상 시범판매 30건, 고객 반응 50건, 기관 제안 10곳, 시범 연계처 3곳 이상을 목표로 수요와 상품성을 검증하겠습니다."
+            },
+            {
+                id: 4,
+                type: "압박",
+                title: "예산·지원금",
+                attack: "왜 정부지원금이 필요한가요? 예산이 큰 것 아닌가요? 1억 원을 어디에 쓰나요? 자부담으로 하면 안 되나요?",
+                mild: "예산이나 지원금 관련 질문",
+                answer: "이번 예산은 단순 운영비나 홍보비가 아니라, 산출물이 남는 개발비 중심으로 편성했습니다. 이동안정 패키지 구조, 소형·대형 규격 개발, 따오 3D 파츠, 패키지 5종, 제작 매뉴얼, 검증 기록표, 온라인 판매기반 구축에 사용하겠습니다. 정부지원금은 기존 꽃집 상품을 검증 가능한 생활문화형 로컬 상품 구조로 고도화하기 위한 마중물입니다."
+            },
+            {
+                id: 5,
+                type: "압박",
+                title: "실행·대표역량·모르는 질문",
+                attack: "대표님이 직접 할 수 있나요? 외부업체 의존도가 높은 것 아닌가요? 사업 끝나고도 계속할 수 있나요? 모르는 질문이 나왔을 때?",
+                mild: "실행 역량 관련 질문 또는 모르는 질문",
+                answer: "대표는 20년 이상 화훼 현장 경험을 바탕으로 상품 기획, 식물 소재 선정, 시제품 제작, 현장 실증을 총괄하겠습니다. 3D 파츠, 패키지, 상세페이지처럼 전문 장비와 기술이 필요한 부분은 외부 협력으로 보완하겠습니다. 지적해주신 부분은 협약기간 내 검증 항목에 반영하고, 필요하면 외부 전문가나 시험기관 검토를 통해 최종 규격과 운영 매뉴얼을 보완하겠습니다."
+            },
+            {
+                id: 6,
+                type: "일반",
+                title: "만능 답변",
+                attack: "진짜 헷갈릴 때",
+                mild: "헷갈리는 질문",
+                answer: "저희 과제는 예쁜 테라리움이 아니라, 이동과 납품이 가능한 구조형 로컬 식물 기프트를 개발하는 과제입니다. 소형·대형 2개 규격을 우선 개발하고, 차량 이동·기울임·반복 흔들림 조건에서 기록표로 검증하겠습니다. 지적해주신 부분은 검증 항목에 반영해 최종 규격과 운영 매뉴얼을 보완하겠습니다."
+            }
         ];
 
         let state = {
@@ -1227,6 +1068,12 @@
 
         function startThreeLinePrompter() {
             threeLinePrompterStarted = true;
+            // 시작 시 타이머를 자동으로 시작한다. 이미 시작되어 있으면 중복으로 시작하지 않음.
+            try {
+                startTimer();
+            } catch (e) {
+                // ignore if timer functions are not yet defined
+            }
             if (prompterLines.length === 0) prepareThreeLinePrompter();
             prompterLineIndex = 0;
             renderThreeLinePrompter();
@@ -1236,11 +1083,29 @@
         function nextPrompterLine() {
             if (currentMode !== 'practice') return;
             if (prompterLines.length === 0) prepareThreeLinePrompter();
+            // When reaching the final line of the current slide, handle accordingly
             if (prompterLineIndex < prompterLines.length - 1) {
                 prompterLineIndex++;
                 renderThreeLinePrompter();
             } else {
-                showToast('마지막 문장입니다.');
+                // 마지막 문장인 경우
+                if (currentSlideIndex === presentationData.length - 1) {
+                    // 전체 슬라이드의 마지막 문장입니다. 기록 저장 여부를 확인합니다.
+                    try {
+                        // Stop the timer and ask to save the record
+                        if (confirm('발표가 끝났습니다. 기록을 저장할까요?')) {
+                            stopAndSaveTimer();
+                        } else {
+                            // 기록 저장을 원하지 않으면 타이머만 초기화
+                            resetTimer();
+                        }
+                    } catch (e) {
+                        // confirm이 실패할 경우 바로 저장
+                        stopAndSaveTimer();
+                    }
+                } else {
+                    showToast('이 슬라이드의 마지막 문장입니다. 다음 슬라이드로 이동하세요.');
+                }
             }
         }
 
